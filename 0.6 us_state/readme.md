@@ -9,17 +9,9 @@ For each correct guess, the state name appears on a blank map of the U.S. If you
 
 ---
 
-### 📸 Screenshot Preview  
-> *(Optional: Add your own screenshot or map preview here)*  
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/USA_blank_map.svg/800px-USA_blank_map.svg.png" width="500"/>
-
----
-
 ### 🚀 How to Run the Game
 
 #### 🧪 Prerequisites:
 - Python 3 installed
 - `pandas` module installed  
-  Install with:  
-  ```bash
-  pip install pandas
+- turtle module
