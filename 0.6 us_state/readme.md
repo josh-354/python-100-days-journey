@@ -1,25 +1,25 @@
-🗺️ U.S. States Game — Python Turtle Project
-A fun and educational Python project built using turtle and pandas that tests your knowledge of the 50 U.S. states!
+# 🗺️ U.S. States Guessing Game 🇺🇸  
+*A Python Turtle + Pandas project for learning U.S. geography*
 
+---
 
-🎮 Game Description
-When you run this game, a blank map of the United States appears. Your goal is to guess all 50 U.S. states. Each correct guess will display the state’s name in its correct location on the map.
+### 🎯 What is this?
+A fun, interactive game built with **Python**, **Turtle graphics**, and **Pandas** that challenges you to guess all **50 U.S. states**!  
+For each correct guess, the state name appears on a blank map of the U.S. If you give up, the game will show you which states you missed so you can study them later.
 
-If you want to stop playing, simply type Exit, and the game will save the remaining states you didn't guess into a states_to_learn.csv file so you can study them later!
+---
 
-🛠️ Built With
-🐍 Python 3
+### 📸 Screenshot Preview  
+> *(Optional: Add your own screenshot or map preview here)*  
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/USA_blank_map.svg/800px-USA_blank_map.svg.png" width="500"/>
 
-🐢 Turtle (graphics)
+---
 
-📊 Pandas (CSV handling)
+### 🚀 How to Run the Game
 
-🧠 Features
-Interactive text input for guessing state names
-
-Real-time map updates with state labels
-
-Saves unguessed states to states_to_learn.csv
-
-Teaches geography while coding!
-
+#### 🧪 Prerequisites:
+- Python 3 installed
+- `pandas` module installed  
+  Install with:  
+  ```bash
+  pip install pandas
