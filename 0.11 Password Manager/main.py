@@ -43,7 +43,7 @@ def save():
                                                                f"\nPassword: {password} \nIs it ok to save?")
         if is_ok:
             with open(DATA_PATH, "a") as data_file:
-                data_file.write(f"{website} | {email} |{password}\n"indent=4)
+                data_file.write(f"{website} | {email} |{password}\n")
                 website_entry.delete(0, END)
                 password_entry.delete(0, END)
 
@@ -73,7 +73,7 @@ website_entry.focus()
 
 email_entry = Entry(width=35)
 email_entry.grid(row=2, column=1, columnspan=2)
-email_entry.insert(0, "angela@gmail.com")
+email_entry.insert(0, "bryllejoshua354@gmail.com")
 
 password_entry = Entry(width=21)
 password_entry.grid(row=3, column=1)
