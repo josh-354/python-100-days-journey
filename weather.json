@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": 123.9105,
+        "lat": 10.3167
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 302.01,
+        "feels_like": 306.12,
+        "temp_min": 302.01,
+        "temp_max": 302.01,
+        "pressure": 1011,
+        "humidity": 73,
+        "sea_level": 1011,
+        "grnd_level": 996
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 0.51,
+        "deg": 158,
+        "gust": 1.63
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1756002319,
+    "sys": {
+        "country": "PH",
+        "sunrise": 1755984920,
+        "sunset": 1756029521
+    },
+    "timezone": 28800,
+    "id": 1725965,
+    "name": "Baugo",
+    "cod": 200
+}

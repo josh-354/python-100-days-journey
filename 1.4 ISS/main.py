@@ -2,10 +2,14 @@ import requests
 from datetime import datetime
 from time import sleep
 import smtplib
+import os
+from dotenv import load_dotenv
 
-MY_EMAIL = "bryllejoshua35421@gmail.com"
-MY_PASSWORD = "password"
-TO_EMAIL = "receiver"
+load_dotenv()  
+
+my_email = os.getenv("MY_EMAIL")
+my_password = os.getenv("MY_PASSWORD")
+RECEIVER = os.getenv("RECEIVER")
 MY_LAT = 43.653225
 MY_LONG = -79.383186
 
@@ -38,10 +42,10 @@ while True:
     if time_now.hour >= sunset and within_lat_long():
         with smtplib.SMTP("smtp.outlook.com") as connection:
             connection.starttls()
-            connection.login(MY_EMAIL, MY_PASSWORD)
+            connection.login(my_email, my_password)
             connection.sendmail(
-                from_addr=MY_EMAIL,
-                to_addrs=TO_EMAIL,
+                from_addr=my_email,
+                to_addrs=RECEIVER,
                 msg="Subject: International Space Station Alert\n\nLook into the sky, you can see the ISS passing"
             )
     sleep(60)
