@@ -1,6 +1,0 @@
-ENV_NIX_APP_ID=51ffde28
-ENV_NIX_API_KEY=7ffbcf3ce10a978c8c59778eff0f6897
-ENV_SHEETY_ENDPOINT=https://api.sheety.co/95d949299830cb0ec6024f9a48eab1b1/myWorkouts/workout
-ENV_SHEETY_USERNAME=AppBreweryInfo
-ENV_SHEETY_PASSWORD=MySecretPassword!Mwahahah
-ENV_SHEETY_TOKEN=hjsdf8i7sdfhjkh3jk4hjkbefkjshef
