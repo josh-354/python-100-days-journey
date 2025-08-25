@@ -1,0 +1,6 @@
+{
+  "ENV_NIX_APP_ID": "apiw",
+  "ENV_NIX_API_KEY": "key",
+  "ENV_SHEETY_ENDPOINT": "link",
+  "ENV_SHEETY_TOKEN": "token"
+}
