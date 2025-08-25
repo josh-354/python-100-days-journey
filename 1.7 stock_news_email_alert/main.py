@@ -78,4 +78,4 @@ if abs(diff_percent) > 1:  # change threshold to 5 if you want
             msg=msg.as_string()
         )
 
-    print("Email sent successfully ✅")
+    print("Email sent successfully ")
