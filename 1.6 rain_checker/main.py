@@ -9,7 +9,7 @@ import pytz
 load_dotenv()
 
 my_email = os.getenv("MY_EMAIL")
-my_password = os.getenv("MY_PASSWORD")
+my_password = os.getenv("APP_PASSWORD")
 RECEIVER = os.getenv("RECEIVER")
 
 # Get API key

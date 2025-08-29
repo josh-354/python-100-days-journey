@@ -16,9 +16,9 @@ NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 stock_api_key = os.getenv("STOCK_API_KEY")
 news_api_key = os.getenv("NEWS_API_KEY")
 
-my_email = "bryllejoshua35421@gmail.com"        # your email
-my_password = "nxfl qjmj jjdl hatr"   # Gmail app password (not normal password!)
-to_email = "bryllejoshua35421@gmail.com"    # who should get the news
+my_email = os.getenv("MY_EMAIL")        # your email
+my_password = os.getenv("APP_PASSWORD")   # Gmail app password (not normal password!)
+to_email = os.getenv("RECEIVER_EMAIL")    # who should get the news
 
 # STEP 1: Stock data
 stock_params = {
@@ -78,4 +78,4 @@ if abs(diff_percent) > 1:  # change threshold to 5 if you want
             msg=msg.as_string()
         )
 
-    print("Email sent successfully ✅")
+    print("Email sent successfully ")
