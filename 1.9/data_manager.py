@@ -3,11 +3,10 @@ import requests
 from requests.auth import HTTPBasicAuth
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+# Load environment variables
 load_dotenv()
 
-SHEETY_PRICES_ENDPOINT = os.getenv("SHEETY_PRICES_ENDPOINT")
-
+SHEETY_PRICES_ENDPOINT = os.environ["SHEETY_PRICES_ENDPOINT"]
 
 class DataManager:
 
@@ -18,17 +17,18 @@ class DataManager:
         self.destination_data = {}
 
     def get_destination_data(self):
-        # 2. Use the Sheety API to GET all the data in that sheet and print it out.
+        """Get all data from Sheety and return it as a list of dicts"""
         response = requests.get(url=SHEETY_PRICES_ENDPOINT, auth=self._authorization)
         data = response.json()
+        print("DEBUG Response JSON:", data)  # 👈 See what key to use
+
+        # ⚠️ Change "prices" to match your sheet tab name in Google Sheets
+        # Example: if tab is "Sheet1", use data["sheet1"]
         self.destination_data = data["prices"]
-        # 3. Try importing pretty print and printing the data out again using pprint() to see it formatted.
-        # pprint(data)
         return self.destination_data
 
-    # 6. In the DataManager Class make a PUT request and use the row id from sheet_data
-    # to update the Google Sheet with the IATA codes. (Do this using code).
     def update_destination_codes(self):
+        """Update Google Sheet with new IATA codes"""
         for city in self.destination_data:
             new_data = {
                 "price": {
@@ -40,4 +40,4 @@ class DataManager:
                 json=new_data,
                 auth=self._authorization
             )
-            print(response.text)
+            print(f"Updated row {city['id']}: {response.text}")
