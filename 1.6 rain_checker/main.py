@@ -10,7 +10,7 @@ load_dotenv()
 
 my_email = os.getenv("MY_EMAIL")
 my_password = os.getenv("APP_PASSWORD")
-RECEIVER = os.getenv("RECEIVER")
+receiver_email = os.getenv("RECEIVER_EMAIL")
 
 # Get API key
 api_key = os.getenv("OWM_API_KEY")
@@ -77,7 +77,7 @@ with smtplib.SMTP("smtp.gmail.com", 587) as connection:
     connection.login(user=my_email, password=my_password)
     connection.sendmail(
         from_addr=my_email,
-        to_addrs=RECEIVER,
+        to_addrs=receiver_email,
         msg=f"Subject:Weather Forecast\n\n{body}"
     )
 
