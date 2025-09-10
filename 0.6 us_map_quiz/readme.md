@@ -1,17 +1,11 @@
-# 🗺️ U.S. States Guessing Game 🇺🇸  
-*A Python Turtle + Pandas project for learning U.S. geography*
+# 🎵 Billboard Hot 100 Downloader  
+
+A Python script that scrapes the **Billboard Hot 100** chart for any given date and downloads the top songs as MP3 files using **yt-dlp**.  
 
 ---
 
-### 🎯 What is this?
-A fun, interactive game built with **Python**, **Turtle graphics**, and **Pandas** that challenges you to guess all **50 U.S. states**!  
-For each correct guess, the state name appears on a blank map of the U.S. If you give up, the game will show you which states you missed so you can study them later.
-
----
-
-### 🚀 How to Run the Game
-
-#### 🧪 Prerequisites:
-- Python 3 installed
-- `pandas` module installed  
-- turtle module
+## ✨ Features
+- 📅 Choose **any date** (Year, Month, Day).  
+- 🎧 Downloads songs as **MP3** from YouTube.  
+- 🔢 Option to download **Top N songs** (default: 3).  
+- 📂 Files saved in a clean format:  
