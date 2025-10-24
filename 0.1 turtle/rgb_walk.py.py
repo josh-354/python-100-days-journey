@@ -1,4 +1,4 @@
-from turtle import Turtle, Screen, Terminator
+from turtle import Turtle, Screen
 import random
 
 # Setup turtle and screen
@@ -13,21 +13,17 @@ def random_color():
     b = random.randint(0, 255)
     return (r, g, b)
 
-# Settings
-turns = [0, 90, 180]
-size = [4]
-
 # Turtle appearance
 tika.shape("turtle")
-tika.pensize(random.choice(size))
+tika.pensize(2)
 tika.speed(0)  # Fastest speed
 
-# Drawing loop
+# Drawing a beautiful colorful spiral
 try:
-    for _ in range(200):
+    for i in range(200):
         tika.color(random_color())
-        tika.forward(30)
-        tika.setheading(random.choice(turns))
+        tika.forward(i * 2)  # Gradually increase forward distance for spiral effect
+        tika.right(59)  # Turn by 59 degrees for a nice spiral pattern (approximates golden angle)
 except Exception as e:
     print(f"Turtle drawing interrupted: {e}")
 
